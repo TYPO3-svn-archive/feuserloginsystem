@@ -1,0 +1,115 @@
+###
+# This are the default TS-constants for feuserloginsystem
+##
+
+plugin.feuserloginsystem {
+  # cat=feuserloginsystem/file/1; type=file[html,htm,tmpl,txt]; label= Template File for FeUserLoginsystem
+	templateFile = EXT:feuserloginsystem/pi1/feuserloginsystem_template.html
+
+	# cat=feuserloginsystem/links/1; type=string; label= Code : Choose the module that shall be displayed (regularlogin, smalllogin)
+  code = regularlogin
+  	
+  # cat=feuserloginsystem/links/2; type=string; label= Starting point : The PIDs of the SysFolders where the user information are stored
+  userPidList = 0
+  	
+  # cat=feuserloginsystem/links/3; type=string; label= Recursive level : Recursive level which is used to search for users in the given SysFolders
+  recursive = 0
+  
+  # cat=feuserloginsystem/enable/1; type=boolean; label= Force No Login Redirection : Choose if the user shall not be redirected to another page after login (despite other settings)
+  forceNoLoginRedirect = 0
+  
+  # cat=feuserloginsystem/enable/2; type=boolean; label= Force No Logout Redirection : Choose if the user shall not be redirected to another page after logout (despite other settings)
+  forceNoLogoutRedirect = 0
+  
+  # cat=feuserloginsystem/links/4; type=string; label= Login Redirection PID : Select one page to which the user will be redirected after login
+  loginRedirectPID = 0
+	
+	# cat=feuserloginsystem/links/5; type=string; label= Logout Redirection PID : Select one page to which the user will be redirected after logout
+  logoutRedirectPID = 0
+  
+}
+
+plugin.feuserloginsystem.regularLoginbox {
+
+	# cat=feuserloginsystem.regularLoginbox/enable/3; type=boolean; label= Show Permalogin : Choose if the system shall remember the user at next login.
+  showPermalogin = 0
+  
+  # cat=feuserloginsystem.regularLoginbox/enable/3; type=boolean; label= Show PasswordRecovery Link : Choose if the PasswordRecovery Link shall be shown or not.
+  showPwRecoveryLink = 0
+  
+  # cat=feuserloginsystem.regularLoginbox/links/6; type=string; label= Password Recovery PID : Select one page containing the PasswordRecovery module.
+  pwRecoveryPID = 0
+  
+  # cat=feuserloginsystem.regularLoginbox/enable/1; type=boolean; label= Hide Header : Choose if headers shall be shown or hidden.
+  hideHeader = 0
+  
+  # cat=feuserloginsystem.regularLoginbox/enable/2; type=boolean; label= Hide Message : Choose if messages shall be shown or hidden.
+  hideMessage = 0
+  
+  # cat=feuserloginsystem.regularLoginbox/enable/3; type=boolean; label= Show by System Disabled User Error Msg : Show error message if a user has been disabled by the system/admin.
+  showSysDisabledUserErrMsg = 1
+  
+  # cat=feuserloginsystem.regularLoginbox/enable/4; type=boolean; label= Show Not Existing User Error Msg : Show error message if the submitted username does not exist.
+  showNotExistingUserErrMsg = 1
+	}
+
+plugin.feuserloginsystem.smallLoginbox {
+
+	# cat=feuserloginsystem.smallLoginbox/enable/1; type=boolean; label= Show Permalogin : Choose if the system shall remember the user at next login
+  showPermalogin = 0
+  
+  # cat=feuserloginsystem.smallLoginbox/enable/2; type=boolean; label= Show PasswordRecovery Link : Choose if the PasswordRecovery Link shall be shown or not.
+  showPwRecoveryLink = 0
+  
+  # cat=feuserloginsystem.smallLoginbox/links/6; type=string; label= Password Recovery PID : Select the page containing the PasswordRecovery module
+  pwRecoveryPID = 0
+  
+  # cat=feuserloginsystem.smallLoginbox/links/7; type=string; label= RegularLoginbox PID : Select the page containing the RegularLoginbox module
+  regularLoginPID = 0
+
+}
+
+plugin.feuserloginsystem.passwordRecovery {
+  
+  # cat=feuserloginsystem.passwordRecovery/enable/1; type=boolean; label= Enable PasswordRecovery feature : Choose if Forgot-Password-Link shall be enabled or disabled and thus Password Recovery is activated or not.
+  enable = 0
+  
+  # cat=feuserloginsystem.passwordRecovery/enable/2; type=boolean; label= Enable FreeCap : Choose if FreeCap (sr_freecap) shall be enabled if it is available.
+	enableFreeCap = 0
+  
+  # cat=feuserloginsystem.passwordRecovery/content/2; type=string; label= Email Address From : Enter email address which is displayed as sender address of a password email
+  emailFrom = 
+  
+	# cat=feuserloginsystem.passwordRecovery/content/3; type=string; label= Email Name From : Enter name which is displayed as sender name of a password email
+  nameFrom = 
+  
+  # cat=feuserloginsystem.passwordRecovery/content/1; type=string; label= PasswordRecovery Mode : Select a mode for PasswordRecovery (currentPassword, newPassword). Standard: currentPassword 
+  mode = currentPassword
+  
+}
+
+plugin.feuserloginsystem.loginProtection {
+  
+  # cat=feuserloginsystem.loginProtection/enable/1; type=boolean; label= Disable user after certain login attempts : Choose if users shall be disabled after a certain number of unsuccessful login attempts.
+  enableUserDisable = 0
+  
+  # cat=feuserloginsystem.loginProtection/enable/2; type=boolean; label= Inform admin about disabled user : Choose if the administrator shall be informed about an user who has been disabled.
+  informAdmin = 1
+  
+  # cat=feuserloginsystem.loginProtection/enable/2; type=boolean; label= Enable account reactivation by user : Choose if the user may reactivate himself after being disabled.
+  reactivationByUser = 0
+  
+  # cat=feuserloginsystem.loginProtection/content/1; type=string; label= Disable user after how many login attempts : Enter a number of unsuccessful login attempts after which a user will be disabled.
+  disableUserAfter = 0  
+  
+  # cat=feuserloginsystem.loginProtection/content/2; type=string; label= Email Address From : Enter the email address of an administrator.
+  emailFrom = 
+  
+	# cat=feuserloginsystem.loginProtection/content/3; type=string; label= Email Name From: Enter the name of an administrator.
+  nameFrom = 
+  
+}
+
+plugin.feuserloginsystem.passwordForcedChange {
+
+}

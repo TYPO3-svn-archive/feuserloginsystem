@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+  <meta type="array">
+    <type>module</type>
+    <description>Language labels for plugin &quot;tx_feuserloginsystem_pi1&quot;</description></meta>
+  <data type="array">
+    <languageKey index="default" type="array">
+      <label index="label_email">Email</label>
+      <label index="label_username">Username</label>
+      <label index="label_password">Password</label>
+      <label index="label_login">Login</label>
+      <label index="label_logout">Logout</label>
+      <label index="label_forgotPassword">I forgot my password!</label>
+      <label index="label_sendNewPassword">Send new password!</label>
+      <label index="label_sendCurrentPassword">Send current password!</label>
+      <label index="label_permalogin">Stay logged in.</label>
+      <label index="text_headerForgotPasswordInstruction">How to get your password back?</label>
+      <label index="text_messageSendNewPasswordInstruction">Enter your username and email address that you submitted during your registrations process. The system will send you a new password by email.</label>
+      <label index="text_messageSendCurrentPasswordInstruction">Enter your username and email address that you submitted during your registrations process. The system will send you your current password by email.</label>
+      <label index="text_headerForgotPasswordEmailSent">Password was sent!</label>
+      <label index="text_messageForgotPasswordCurPwSent">Your current password was sent to ###EMAIL###. Just check your email account.</label>
+      <label index="text_messageForgotPasswordNewPwSent">A new password was sent to ###EMAIL###. Just check your email account.</label>
+      <label index="text_emailMessageCurrentPassword">Your current password!%br%Hello ###USERNAME###.%br%%br%This is your current password: '###PASSWORD###'.%br%%br%Kind regards%br%%br%###HTTP_HOST###</label>
+      <label index="text_emailMessageNewPassword">Your new password!%br%Hello ###USERNAME###.%br%%br%This is your new password: '###PASSWORD###'.%br%%br%Kind regards%br%%br%###HTTP_HOST###</label>
+      <label index="text_headerLogin">User login</label>
+      <label index="text_messageLogin">Please enter your username and password to get access to the website.</label>
+      <label index="text_headerError">Login error</label>
+      <label index="text_messageError">An error occured during the login process. Please type in your username and password again, also taking care of the caps-lock.</label>
+      <label index="text_messageErrorNotExistingUser">The entered username does not exist. Please type in your username and password again, also taking care of the caps-lock.</label>
+      <label index="text_messageErrorDisabledUser">Your account is currently disabled. Please get in touch with the administrator.</label>
+      <label index="text_messageErrorUserHasBeenDisabled">For security reasons, you have just been disabled by the website. You will also receive a confirmation email with further instructions.%br%%br%Please do not try to sign in anymore.</label>
+      <label index="text_messageErrorUserHasAlreadyBeenDisabled">For security reasons, you have been disabled previously by the website. You should have received an email with further instructions.%br%%br%Please do not try to sign in anymore.</label>
+      <label index="text_headerSuccess">Login was successful</label>
+      <label index="text_messageSuccess">You were logged in successfully with your submitted user information.</label>
+      <label index="text_headerStatus">Current online status</label>
+      <label index="text_messageStatus">Here you can see your current online status. If you want to leave this website, please don't forget to log out.</label>
+      <label index="text_headerLogout">Your logout was successful</label>
+      <label index="text_messageLogout">You were logged out successfully. In case you want to go back you need to log in again.</label>
+      <label index="text_loggedInAs">Logged in as ###USERNAME### (###NAME###)</label>
+      <label index="text_headerForgotPwInstEnableDisAcc">This way you can reactivate your account.</label>
+      <label index="text_emailMsgDisabledAccUserInfo">Your account has been disabled!%br%Hello ###USERNAME###.%br%%br%Your account has just been disabled because there were too many unsuccessful login attempts (###CURRENTLOGINATTEMPTS### times).%br%%br%The adminstrator will probably enable you again. If you have further questions, just get in touch with the administrator.%br%%br%Kind regards%br%%br%###HTTP_HOST###</label>
+      <label index="text_emailMsgDisabledAccUserInfoReact">Your account has been disabled!%br%Hello ###USERNAME###.%br%%br%Your account has just been disabled because there were too many unsuccessful login attempts (###CURRENTLOGINATTEMPTS###).%br%%br%In order to reactivate your account, please follow the link ###REACTIVATIONLINK###.%br%%br%If the link is not completely linked, please copy it and paste it into the browser's address field manually.%b%%b%There you can create yourself a new password. Therefore you simply need to enter your username '###USERNAME###' and your email address '###EMAIL###' into the input fields of the form.%br%%br%Kind regards%br%%br%###HTTP_HOST###</label>
+      <label index="text_emailMsgDisabledAccAdminInfo">User account has been disabled!%br%Hello administrator.%br%%br%There is an user account '###USERNAME###' that has just been disabled because there were too many unsuccessful login attempts (###CURRENTLOGINATTEMPTS### times).%br%%br%The user '###USERNAME###' can reactivate the account on his own.%br%%br%Kind regards%br%%br%###HTTP_HOST###</label>
+      <label index="text_emailMsgDisabledAccAdminInfoReact">User account has been disabled!%br%Hello administrator.%br%%br%There is an user account '###USERNAME###' that has just been disabled because there were too many unsuccessful login attempts (###CURRENTLOGINATTEMPTS### times).%br%%br%In order to reactivate the user's account, sign in to the TYPO3 backend and enable the user '###USERNAME###' manually.%br%%br%Kind regards%br%%br%###HTTP_HOST###</label>
+    </languageKey>
+    <languageKey index="de" type="array">
+      <label index="label_email">Email</label>
+      <label index="label_username">Benutzer</label>
+      <label index="label_password">Passwort</label>
+      <label index="label_login">Einloggen</label>
+      <label index="label_logout">Ausloggen</label>
+      <label index="label_forgotPassword">Ich habe mein Password vergessen!</label>
+      <label index="label_sendNewPassword">Sende neues Passwort!</label>
+      <label index="label_sendCurrentPassword">Sende aktuelles Passwort!</label>
+      <label index="label_permalogin">Angemeldet bleiben.</label>
+      <label index="text_headerForgotPasswordInstruction">Wie bekomme ich mein Passwort zurück?</label>
+      <label index="text_messageSendNewPasswordInstruction">Um ein neues Passwort zu bekommen, geben Sie bitte Ihren Benutzernamen und die Email-Adresse ein, die Sie bei der Registrierung angegeben haben. Das System schickt Ihnen danach eine neues Passwort zu.</label>
+      <label index="text_messageSendCurrentPasswordInstruction">Um Ihr aktuelles Passwort zu bekommen, geben Sie bitte Ihren Benutzernamen und die Email-Adresse ein, die Sie bei der Registrierung angegeben haben. Das System schickt Ihnen danach ihr aktuelles Passwort zu.</label>
+      <label index="text_headerForgotPasswordEmailSent">Passwort wurde verschickt!</label>
+      <label index="text_messageForgotPasswordCurPwSent">Ihr aktuelles Passwort wurde an ###EMAIL### gesendet. Bitte überprüfen Sie Ihr Email-Konto.</label>
+      <label index="text_messageForgotPasswordNewPwSent">Ihr neues Passwort wurde an ###EMAIL### gesendet. Bitte überprüfen Sie Ihr Email-Konto.</label>
+      <label index="text_emailMessageCurrentPassword">Ihr aktuelles Passwort!%br%Hallo ###USERNAME###.%br%%br%Das ist Ihr aktuelles Passwort: '###PASSWORD###'.%br%%br%Mit freundlichen Grüßen%br%%br%###HTTP_HOST###</label>
+      <label index="text_emailMessageNewPassword">Ihr neues Passwort!%br%Hallo ###USERNAME###.%br%%br%Das ist Ihr neues Passwort: '###PASSWORD###'.%br%%br%Mit freundlichen Grüßen%br%%br%###HTTP_HOST###</label>
+      <label index="text_headerLogin">Benutzeranmeldung</label>
+      <label index="text_messageLogin">Geben Sie bitte Ihren Benutzernamen und das dazugehörige Passwort ein um sich anzumelden.</label>
+      <label index="text_headerError">Fehler bei der Anmeldung</label>
+      <label index="text_messageError">Es trat ein Fehler bei dem Anmeldevorgang auf. Bitte geben Sie Ihren Benutzernamen und das Passwort erneut ein. Achten Sie auch auf die Groß- und Kleinschreibung.</label>
+      <label index="text_messageErrorNotExistingUser">Der eingegebene Benutzername existiert nicht. Bitte geben Sie Ihren Benutzernamen und das Passwort erneut ein. Achten Sie auch auf die Groß- und Kleinschreibung.</label>
+      <label index="text_messageErrorDisabledUser">Ihr Account ist momentan deaktiviert, bitte kontaktieren Sie den Administrator.</label>
+      <label index="text_messageErrorUserHasBeenDisabled">Sie wurden gerade aus Sicherheitsgründen von der Webseite deaktiviert. Als Bestätigung erhalten Sie beim Vorhandensein einer Emailadresse eine Email mit weiteren Hinweisen zugeschickt.%br%%br%Bitte versuchen Sie nicht mehr sich anzumelden.</label>
+      <label index="text_messageErrorUserHasAlreadyBeenDisabled">Sie wurden vor kurzem aus Sicherheitsgründen von der Webseite deaktiviert. Sie sollten beim Vorhandensein einer Emailadresse eine Email mit weiteren Hinweisen erhalten haben.%br%%br%Bitte versuchen Sie nicht mehr sich anzumelden.</label>
+      <label index="text_headerSuccess">Benutzeranmeldung war erfolgreich</label>
+      <label index="text_messageSuccess">Sie wurden erfolgreich mit den eingegebenen Benutzerdaten angemeldet.</label>
+      <label index="text_headerStatus">Aktueller Onlinestatus</label>
+      <label index="text_messageStatus">Hier sehen Sie Ihren aktuellen Onlinestatus. Wenn Sie die Webseite verlassen möchten, vergessen Sie bitte nicht sich abzumelden.</label>
+      <label index="text_headerLogout">Benutzerabmeldung war erfolgreich</label>
+      <label index="text_messageLogout">Sie wurden erfolgreich abgemeldet. Wenn Sie doch noch etwas vergessen haben, geben Sie Ihre Benutzerdaten erneut ein.</label>
+      <label index="text_loggedInAs">Angemeldet als ###USERNAME### (###NAME###)</label>
+      <label index="text_headerForgotPwInstEnableDisAcc">So entsperren Sie Ihr Benutzerkonto.</label>
+      <label index="text_emailMsgDisabledAccUserInfo">Dein Account wurde gerade deaktiviert!%br%Hallo ###USERNAME###.%br%%br%Ihr Account wurde gerade deaktiviert weil es zu viele fehlgeschlagene Anmeldeversuche (###CURRENTLOGINATTEMPTS### mal) gab.%br%%br%Der Administrator wird Sie wahrscheinlich wieder freischalten. Wenn Sie noch weitere Fragen haben, setzen Sie sich einfach mit ihm in Kontakt.%br%%br%Mit freundlichen Grüßen%br%%br%###HTTP_HOST###</label>
+      <label index="text_emailMsgDisabledAccUserInfoReact">Dein Account wurde gerade deaktiviert!%br%Hallo ###USERNAME###.%br%%br%Ihr Account wurde gerade deaktiviert weil es zu viele fehlgeschlagene Anmeldeversuche (###CURRENTLOGINATTEMPTS###) gab.%br%%br%Um Ihr Profil wieder zu aktivieren, folgen Sie bitte dem Link ###REACTIVATIONLINK###.%br%%br%Wenn der Link nicht komplett verlinkt wurde, kopieren Sie diesen bitte und fügen Sie ihn manuell in die Adresszeile des Browsers ein.%br%%br%Dort können Sie sich ein neues Passwort generieren lassen. Dazu geben Sie bitte Ihren Benutzername '###USERNAME###' und Ihre Email '###EMAIL###' in die Formularfelder ein.%br%%br%Mit freundlichen Grüßen%br%%br%###HTTP_HOST###</label>
+      <label index="text_emailMsgDisabledAccAdminInfo">Benutzeraccount wurde gerade deaktiviert!%br%Hallo Administrator.%br%%br%Es gibt ein Benutzeraccount '###USERNAME###', der gerade deaktiviert wurde, weil zu viele fehlgeschlagene Anmeldeversuche stattgefunden haben (###CURRENTLOGINATTEMPTS### mal).%br%%br%Der Benutzer kann den Account wieder selbstständig aktivieren.%br%%br%Mit freundlichen Grüßen%br%%br%###HTTP_HOST###</label>
+      <label index="text_emailMsgDisabledAccAdminInfoReact">Benutzeraccount wurde gerade deaktiviert!%br%Hallo Administrator.%br%%br%Es gibt ein Benutzeraccount '###USERNAME###', der gerade deaktiviert wurde, weil zu viele fehlgeschlagene Anmeldeversuche stattgefunden haben (###CURRENTLOGINATTEMPTS### mal).%br%%br%Um den Account wieder zu aktivieren, melden Sie sich bitte im TYPO3 Backend an und aktivieren Sie den Benutzer '###USERNAME###'' von Hand.%br%%br%Mit freundlichen Grüßen%br%%br%###HTTP_HOST###</label>
+    </languageKey>
+    <languageKey index="dk" type="array">
+    </languageKey>
+    <languageKey index="no" type="array">
+    </languageKey>
+    <languageKey index="it" type="array">
+    </languageKey>
+    <languageKey index="fr" type="array">
+    </languageKey>
+    <languageKey index="es" type="array">
+    </languageKey>
+    <languageKey index="nl" type="array">
+    </languageKey>
+    <languageKey index="cz" type="array">
+    </languageKey>
+    <languageKey index="pl" type="array">
+    </languageKey>
+    <languageKey index="si" type="array">
+    </languageKey>
+    <languageKey index="fi" type="array">
+    </languageKey>
+    <languageKey index="tr" type="array">
+    </languageKey>
+    <languageKey index="se" type="array">
+    </languageKey>
+    <languageKey index="pt" type="array">
+    </languageKey>
+    <languageKey index="ru" type="array">
+    </languageKey>
+    <languageKey index="ro" type="array">
+    </languageKey>
+    <languageKey index="ch" type="array">
+    </languageKey>
+    <languageKey index="sk" type="array">
+    </languageKey>
+    <languageKey index="lt" type="array">
+    </languageKey>
+    <languageKey index="is" type="array">
+    </languageKey>
+    <languageKey index="hr" type="array">
+    </languageKey>
+    <languageKey index="hu" type="array">
+    </languageKey>
+    <languageKey index="gl" type="array">
+    </languageKey>
+    <languageKey index="th" type="array">
+    </languageKey>
+    <languageKey index="gr" type="array">
+    </languageKey>
+    <languageKey index="hk" type="array">
+    </languageKey>
+    <languageKey index="eu" type="array">
+    </languageKey>
+    <languageKey index="bg" type="array">
+    </languageKey>
+    <languageKey index="br" type="array">
+    </languageKey>
+    <languageKey index="et" type="array">
+    </languageKey>
+    <languageKey index="ar" type="array">
+    </languageKey>
+    <languageKey index="he" type="array">
+    </languageKey>
+    <languageKey index="ua" type="array">
+    </languageKey>
+    <languageKey index="lv" type="array">
+    </languageKey>
+    <languageKey index="jp" type="array">
+    </languageKey>
+    <languageKey index="vn" type="array">
+    </languageKey>
+    <languageKey index="ca" type="array">
+    </languageKey>
+    <languageKey index="ba" type="array">
+    </languageKey>
+    <languageKey index="kr" type="array">
+    </languageKey>
+    <languageKey index="eo" type="array">
+    </languageKey>
+    <languageKey index="my" type="array">
+    </languageKey>
+    <languageKey index="hi" type="array">
+    </languageKey>
+  </data>
+</T3locallang>

@@ -1,0 +1,98 @@
+
+## Includes feuserloginsystem as a TYPO3 extension:
+includeLibs.tx_feuserloginsystem_pi1 = EXT:feuserloginsystem/pi1/class.tx_feuserloginsystem_pi1.php
+
+
+plugin.tx_feuserloginsystem_pi1 >
+plugin.tx_feuserloginsystem_pi1 = USER
+plugin.tx_feuserloginsystem_pi1 {
+  userFunc = tx_feuserloginsystem_pi1->main
+
+  allowCaching = 0
+
+  code = {$plugin.feuserloginsystem.code}
+
+  templateFile = {$plugin.feuserloginsystem.templateFile}
+
+  userPidList = {$plugin.feuserloginsystem.userPidList}
+
+  recursive = {$plugin.feuserloginsystem.recursive}
+
+  forceNoLoginRedirect = {$plugin.feuserloginsystem.forceNoLoginRedirect}
+
+  forceNoLogoutRedirect = {$plugin.feuserloginsystem.forceNoLogoutRedirect}
+
+  loginRedirectPID = {$plugin.feuserloginsystem.loginRedirectPID}
+
+  logoutRedirectPID = {$plugin.feuserloginsystem.logoutRedirectPID}
+
+  regularLoginbox {
+
+  	showPermalogin = {$plugin.feuserloginsystem.regularLoginbox.showPermalogin}
+
+  	showPwRecoveryLink = {$plugin.feuserloginsystem.regularLoginbox.showPwRecoveryLink}
+
+  	pwRecoveryPID = {$plugin.feuserloginsystem.regularLoginbox.pwRecoveryPID}
+
+    hideHeader = {$plugin.feuserloginsystem.regularLoginbox.hideHeader}
+
+    hideMessage = {$plugin.feuserloginsystem.regularLoginbox.hideMessage}
+
+    showSysDisabledUserErrMsg = {$plugin.feuserloginsystem.regularLoginbox.showSysDisabledUserErrMsg}
+
+    showNotExistingUserErrMsg = {$plugin.feuserloginsystem.regularLoginbox.showNotExistingUserErrMsg}
+
+  }
+
+  smallLoginbox {
+
+  	showPermalogin = {$plugin.feuserloginsystem.smallLoginbox.showPermalogin}
+
+  	showPwRecoveryLink = {$plugin.feuserloginsystem.smallLoginbox.showPwRecoveryLink}
+
+  	pwRecoveryPID = {$plugin.feuserloginsystem.smallLoginbox.pwRecoveryPID}
+
+  	regularLoginPID = {$plugin.feuserloginsystem.smallLoginbox.regularLoginPID}
+
+  }
+
+  passwordRecovery {
+
+  	enable = {$plugin.feuserloginsystem.passwordRecovery.enable}
+
+  	enableFreeCap = {$plugin.feuserloginsystem.passwordRecovery.enableFreeCap}
+
+  	mode = {$plugin.feuserloginsystem.passwordRecovery.mode}
+
+    emailFrom = {$plugin.feuserloginsystem.passwordRecovery.emailFrom}
+
+    nameFrom = {$plugin.feuserloginsystem.passwordRecovery.nameFrom}
+
+  }
+
+  passwordForcedChange {
+
+  }
+
+  loginProtection {
+
+    enableUserDisable = {$plugin.feuserloginsystem.loginProtection.enableUserDisable}
+
+    disableUserAfter = {$plugin.feuserloginsystem.loginProtection.disableUserAfter}
+
+    reactivationByUser = {$plugin.feuserloginsystem.loginProtection.reactivationByUser}
+
+    informAdmin = {$plugin.feuserloginsystem.loginProtection.informAdmin}
+
+    emailFrom = {$plugin.feuserloginsystem.loginProtection.emailFrom}
+
+    nameFrom = {$plugin.feuserloginsystem.loginProtection.nameFrom}
+
+  }
+
+  _LOCAL_LANG {
+  }
+
+}
+
+

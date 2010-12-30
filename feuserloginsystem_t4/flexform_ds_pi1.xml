@@ -1,0 +1,1007 @@
+<T3DataStructure>
+ <meta>
+ <langDisable>1</langDisable>
+ </meta>
+ <sheets>
+  <sDEF>
+   <ROOT>
+    <TCEforms>
+     <sheetTitle>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.sheet_general</sheetTitle>
+    </TCEforms>
+    <type>array</type>
+     <el>
+      <module>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_module</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+		   <numIndex index="empty" type="array">
+           <numIndex index="0"></numIndex>
+           <numIndex index="1">empty</numIndex>
+          </numIndex>
+          <numIndex index="regularlogin" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_regularlogin</numIndex>
+           <numIndex index="1">regularlogin</numIndex>
+          </numIndex>
+          <numIndex index="smalllogin" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_smalllogin</numIndex>
+           <numIndex index="1">smalllogin</numIndex>
+          </numIndex>
+          <numIndex index="passwordrecovery" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_passwordrecovery</numIndex>
+           <numIndex index="1">passwordrecovery</numIndex>
+          </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </module>
+      <templatefile>
+	   <TCEforms>
+		<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_templatefile</label>
+		 <config>
+		  <type>group</type>
+		  <internal_type>file</internal_type>
+		  <allowed>tmpl,html,htm</allowed>
+		  <max_size>100</max_size>
+		  <uploadfolder>uploads/tx_feuserloginsystem</uploadfolder>
+		  <maxitems>1</maxitems>
+		  <size>1</size>
+		  <selectedListStyle>Width:180px</selectedListStyle>
+		 </config>
+		</TCEforms>
+	  </templatefile>
+      <users>
+       <TCEforms>
+        <exclude>1</exclude>
+        <label>LLL:EXT:lang/locallang_general.php:LGL.startingpoint</label>
+        <config>
+         <type>group</type>
+         <internal_type>db</internal_type>
+         <allowed>pages</allowed>
+         <size>3</size>
+         <maxitems>22</maxitems>
+         <minitems>0</minitems>
+         <show_thumbs>1</show_thumbs>
+        </config>
+       </TCEforms>
+      </users>
+      <recursive>
+       <TCEforms>
+        <label>LLL:EXT:lang/locallang_general.php:LGL.recursive</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+          <numIndex index="0" type="array">
+           <numIndex index="0"></numIndex>
+           <numIndex index="1"></numIndex>
+          </numIndex>
+          <numIndex index="1" type="array">
+           <numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.1</numIndex>
+           <numIndex index="1">1</numIndex>
+           </numIndex>
+          <numIndex index="2" type="array">
+           <numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.2</numIndex>
+           <numIndex index="1">2</numIndex>
+          </numIndex>
+          <numIndex index="3" type="array">
+           <numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.3</numIndex>
+           <numIndex index="1">3</numIndex>
+          </numIndex>
+          <numIndex index="4" type="array">
+           <numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.4</numIndex>
+           <numIndex index="1">4</numIndex>
+          </numIndex>
+          <numIndex index="5" type="array">
+           <numIndex index="0">LLL:EXT:cms/locallang_ttc.php:recursive.I.5</numIndex>
+           <numIndex index="1">250</numIndex>
+          </numIndex>
+         </items>
+         <minitems>0</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </recursive>
+      <forcenologinredirect>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_loginforcenoredirect</label>
+        <config>
+         <type>check</type>
+        </config>
+       </TCEforms>
+      </forcenologinredirect>
+      <forcenologoutredirect>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_logoutforcenoredirect</label>
+        <config>
+         <type>check</type>
+        </config>
+       </TCEforms>
+      </forcenologoutredirect>
+      <loginredirectpid>
+       <TCEforms>
+        <exclude>1</exclude>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_loginredirectpid</label>
+        <config>
+         <type>group</type>
+         <internal_type>db</internal_type>
+         <allowed>pages</allowed>
+         <size>1</size>
+         <maxitems>1</maxitems>
+         <minitems>0</minitems>
+         <show_thumbs>1</show_thumbs>
+        </config>
+       </TCEforms>
+      </loginredirectpid>
+	    <logoutredirectpid>
+       <TCEforms>
+        <exclude>1</exclude>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_logoutredirectpid</label>
+        <config>
+         <type>group</type>
+         <internal_type>db</internal_type>
+         <allowed>pages</allowed>
+         <size>1</size>
+         <maxitems>1</maxitems>
+         <minitems>0</minitems>
+         <show_thumbs>1</show_thumbs>
+        </config>
+       </TCEforms>
+      </logoutredirectpid>
+     </el>
+    </ROOT>
+   </sDEF>
+   
+   <sTranslation>
+    <ROOT>
+     <TCEforms>
+      <sheetTitle>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.sheet_generalTranslation</sheetTitle>
+     </TCEforms>
+     <type>array</type>
+     <el>
+      <userlabel>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_userlabel</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </userlabel>
+      <passwordlabel>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_passwordlabel</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </passwordlabel>
+      <emaillabel>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_emaillabel</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </emaillabel>
+      <loginbutton>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_loginbutton</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </loginbutton>
+      <logoutbutton>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_logoutbutton</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </logoutbutton>
+      <permaloginbutton>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_permaloginbutton</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </permaloginbutton>
+      <forgotpasswordbutton>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_forgotpasswordbutton</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </forgotpasswordbutton>
+     </el>
+    </ROOT>
+   </sTranslation>
+   
+	 <sRegularLoginbox>
+    <ROOT>
+     <TCEforms>
+      <sheetTitle>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.sheet_regularLoginbox</sheetTitle>
+     </TCEforms>
+     <type>array</type>
+     <el>
+     	<showPermalogin>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_showPermalogin</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </showPermalogin>
+      <showPwRecoveryLink>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_enablePwLink</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </showPwRecoveryLink>
+      <pwRecoveryPID>
+       <TCEforms>
+        <exclude>1</exclude>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_passwordRecoveryPID</label>
+        <config>
+         <type>group</type>
+         <internal_type>db</internal_type>
+         <allowed>pages</allowed>
+         <size>1</size>
+         <maxitems>1</maxitems>
+         <minitems>0</minitems>
+         <show_thumbs>1</show_thumbs>
+        </config>
+       </TCEforms>
+      </pwRecoveryPID>
+     	<hideHeader>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_hideHeader</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </hideHeader>
+      <hideMessage>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_hideMessage</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </hideMessage>
+      <showSysDisabledUserErrMsg>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_showSysDisabledUserErrMsg</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </showSysDisabledUserErrMsg>
+      <showNotExistingUserErrMsg>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_showNotExistingUserErrMsg</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </showNotExistingUserErrMsg>
+      <welcomeheader>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_welcomeheader</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </welcomeheader>
+      <welcomemessage>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_welcomemessage</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </welcomemessage>
+      <successheader>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_successheader</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </successheader>
+      <successmessage>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_successmessage</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </successmessage>
+      <statusheader>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_statusheader</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </statusheader>
+      <statusmessage>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_statusmessage</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </statusmessage>
+      <errorheader>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_errorheader</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </errorheader>
+      <errormessage>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_errormessage</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </errormessage>
+      <errormessagenotexistinguser>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_errormessagenotexistinguser</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </errormessagenotexistinguser>
+      <errormessagedisableduser>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_errormessagedisableduser</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </errormessagedisableduser>
+      <errormessageuserhasbeendisabled>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_errormessageuserhasbeendisabled</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </errormessageuserhasbeendisabled>
+      <errormessageuserhasalreadybeendisabled>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_errormessageuserhasalreadybeendisabled</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </errormessageuserhasalreadybeendisabled>
+      <logoutheader>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_logoutheader</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </logoutheader>
+      <logoutmessage>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_logoutmessage</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </logoutmessage>
+     </el>
+    </ROOT>
+   </sRegularLoginbox>
+   
+   <sSmallLoginbox>
+    <ROOT>
+     <TCEforms>
+      <sheetTitle>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.sheet_smallLoginbox</sheetTitle>
+     </TCEforms>
+     <type>array</type>
+     <el>
+     	<showPermalogin>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_showPermalogin</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </showPermalogin>
+      <showPwRecoveryLink>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_enablePwLink</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </showPwRecoveryLink>
+      <pwRecoveryPID>
+       <TCEforms>
+        <exclude>1</exclude>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_passwordRecoveryPID</label>
+        <config>
+         <type>group</type>
+         <internal_type>db</internal_type>
+         <allowed>pages</allowed>
+         <size>1</size>
+         <maxitems>1</maxitems>
+         <minitems>0</minitems>
+         <show_thumbs>1</show_thumbs>
+        </config>
+       </TCEforms>
+      </pwRecoveryPID>
+      <regularLoginPID>
+       <TCEforms>
+        <exclude>1</exclude>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_regularLoginPID</label>
+        <config>
+         <type>group</type>
+         <internal_type>db</internal_type>
+         <allowed>pages</allowed>
+         <size>1</size>
+         <maxitems>1</maxitems>
+         <minitems>0</minitems>
+         <show_thumbs>1</show_thumbs>
+        </config>
+       </TCEforms>
+      </regularLoginPID>
+      <loggedinaslabel>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_loggedinas</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </loggedinaslabel>
+     </el>
+    </ROOT>
+   </sSmallLoginbox>
+   
+   <sPasswordRecovery>
+    <ROOT>
+     <TCEforms>
+      <sheetTitle>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.sheet_passwordRecovery</sheetTitle>
+     </TCEforms>
+     <type>array</type>
+     <el>
+     	<enable>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_enablePasswordRecovery</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </enable>
+      <mode>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_mode</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+          <numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="currentPassword" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_sendCurrentPassword</numIndex>
+           <numIndex index="1">currentPassword</numIndex>
+          </numIndex>
+          <numIndex index="newPassword" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_sendNewPassword</numIndex>
+           <numIndex index="1">newPassword</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </mode>
+      <emailFrom>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_emailFrom</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </emailFrom>
+      <nameFrom>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_nameFrom</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </nameFrom>
+      <enableFreeCap>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_enableFreeCap</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </enableFreeCap>
+      <enableDisabledAccountHeader>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_enableDisabledAccountHeader</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </enableDisabledAccountHeader>
+      <forgotpasswordheader>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_forgotpasswordheader</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </forgotpasswordheader>
+      <sendcurrentpasswordinstruction>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_sendcurrentpasswordinstruction</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </sendcurrentpasswordinstruction>
+      <sendnewpasswordinstruction>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_sendnewpasswordinstruction</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </sendnewpasswordinstruction>
+      <sendnewpasswordlabel>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_sendnewpasswordlabel</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </sendnewpasswordlabel>
+      <sendcurrentpasswordlabel>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_sendcurrentpasswordlabel</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </sendcurrentpasswordlabel>
+      <passwordsentheader>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_passwordsentheader</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </passwordsentheader>
+      <currentpasswordsentmessage>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_currentpasswordsentmessage</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </currentpasswordsentmessage>
+      <newpasswordsentmessage>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_newpasswordsentmessage</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </newpasswordsentmessage>
+      <emailMessageCurrentPassword>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_emailMessageCurrentPassword</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </emailMessageCurrentPassword>
+      <emailMessageNewPassword>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_emailMessageNewPassword</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </emailMessageNewPassword>
+     </el>
+    </ROOT>
+   </sPasswordRecovery>
+   
+   <sLoginProtection>
+    <ROOT>
+     <TCEforms>
+      <sheetTitle>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.sheet_loginProtection</sheetTitle>
+     </TCEforms>
+     <type>array</type>
+     <el>
+     	<enableUserDisable>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_enableUserDisable</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </enableUserDisable>
+      <disableUserAfter>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_disableUserAfter</label>
+				<config>
+					<type>input</type>
+					<size>3</size>
+				</config>
+			 </TCEforms>
+      </disableUserAfter>
+      <reactivationByUser>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_reactivationByUser</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </reactivationByUser>
+      <informAdmin>
+       <TCEforms>
+        <label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_informAdmin</label>
+        <config>
+         <type>select</type>
+         <items type="array">
+         	<numIndex index="typoscript" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_typoscript</numIndex>
+           <numIndex index="1">typoscript</numIndex>
+          </numIndex>
+          <numIndex index="enable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_yes</numIndex>
+           <numIndex index="1">1</numIndex>
+          </numIndex>
+          <numIndex index="disable" type="array">
+           <numIndex index="0">LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.select_no</numIndex>
+           <numIndex index="1">0</numIndex>
+           </numIndex>
+         </items>
+         <minitems>1</minitems>
+         <maxitems>1</maxitems>
+         <size>1</size>
+        </config>
+       </TCEforms>
+      </informAdmin>
+      <emailFrom>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_emailFrom</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </emailFrom>
+      <nameFrom>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_nameFrom</label>
+				<config>
+					<type>input</type>
+					<size>30</size>
+				</config>
+			 </TCEforms>
+      </nameFrom>
+      <emailMsgDisabledAccUserInfo>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_emailMsgDisabledAccUserInfo</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </emailMsgDisabledAccUserInfo>
+      <emailMsgDisabledAccUserInfoReact>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_emailMsgDisabledAccUserInfoReact</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </emailMsgDisabledAccUserInfoReact>
+      <emailMsgDisabledAccAdminInfo>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_emailMsgDisabledAccAdminInfo</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </emailMsgDisabledAccAdminInfo>
+      <emailMsgDisabledAccAdminInfoReact>
+			 <TCEforms>
+				<label>LLL:EXT:feuserloginsystem/locallang_tca.php:feuserloginsystem.pi_flexform.label_emailMsgDisabledAccAdminInfoReact</label>
+				<config>
+					<type>text</type>
+					<size>30</size>
+					<rows>5</rows>
+				</config>
+			 </TCEforms>
+      </emailMsgDisabledAccAdminInfoReact>
+     </el>
+    </ROOT>
+   </sLoginProtection>
+
+  </sheets>
+</T3DataStructure>

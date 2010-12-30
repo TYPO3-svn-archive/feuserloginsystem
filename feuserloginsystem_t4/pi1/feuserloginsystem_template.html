@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>This is the template for the extension "feuserloginsystem"</title>
+	<meta name="author" content="Andre Obereigner http://www.obereigner.de" />
+	<meta name="date" content="2006-01-26" />
+	
+	<style type="text/css">
+	body { font-family: Arial; font-size: 12px; margin:1em; padding:1em; font-weight: normal;}
+	p.separator { padding:1em; border:1px solid #CFDAEB; }
+	h1 { font-family: Verdana; font-size: 16px; color: #0000CC; font-weight: bold; text-decoration: none; }
+	.description { font-family: Verdana; font-size: 12px; color: #0000CC; font-weight: normal; text-decoration: none; }
+	a:link, a:visited, a:active { font-family: Verdana; font-size: 13px; color: #666666; font-weight: bold; text-decoration: none; }
+	a:hover { text-decoration: underline; }
+	</style>
+	
+</head>
+<body>
+
+<!--#########################################################-->
+<p class="separator"><a href="#navigation">Navigation</a></p>
+<!--#########################################################-->
+
+<h1>Common markers</h1>
+<p class="descript-disabledion">All the following markers are substituted by system content or by user-spezified content.</p>
+
+<h2>Markers</h2>
+<ul>
+	<li>###ACTION_URI###                - URI of the request for the login/logout form</li>
+	<li>###EXTRA_HIDDEN###              - Hook required (additionnal hidden field used by kb_md5fepw extension by Kraft Bernhard)</li>
+	<li>###ON_SUBMIT###                 - Hook required (used by kb_md5fepw extension by Kraft Bernhard)</li>
+	<li>###PREFIXID###                  - Same as class name ('tx_newloginbox_pi1') usefull to get a unique classname prefix</li>
+	<li>###REDIRECT_URL###              - URL of redirection upon login</li>
+	<li>###STORAGE_PID###               - explicit enough I guess (if not : id of the page where user are stored)</li>
+  <li>###TEXT_HEADER###               - can be set in the TYPO3 backend</li>
+	<li>###TEXT_MESSAGE###              - can be set in the TYPO3 backend</li>
+	<li>###TEXT_LOGGEDINAS###           - Logged in as "user"</li>
+	<li>###USERNAME###</li>
+	<li>###NAME###</li>
+</ul>
+
+<h2>Wrap parts</h2>
+<ul>
+	<li>###HEADER_VALID###  - usefull to define what to show/hide</li>
+	<li>###MESSAGE_VALID### - usefull to define what to show/hide</li>
+	<li>###FORGOT_PASSWORD_VALID### - usefull to define what to show/hide</li>
+	<li>###PERMALOGIN_VALID### - usefull to define what to show/hide</li>
+</ul>
+
+<h2>FeUserLoginsystem Language Markers (see pi/locallang.xml)</h2>
+<ul>
+	<li>###LABEL_EMAIL###                          - (ie: Email)</li>
+	<li>###LABEL_USERNAME###                       - (ie: Username)</li>
+	<li>###LABEL_PASSWORD###                       - (ie: Password)</li>
+	<li>###LABEL_LOGIN###                          - (ie: Login)</li>
+	<li>###LABEL_LOGOUT###                         - (ie: Logout)</li>
+	<li>###LABEL_FORGOT_PASSWORD###                - (ie: Forgot Password?)</li>
+  <li>###LABEL_SEND_PASSWORD###                  - (ie: Send Password!)</li>
+</ul>
+
+<!--#########################################################-->
+<p class="separator"><a href="#navigation">Navigation</a> | <a href="#">To top</a></p>
+<!--#########################################################-->
+
+<h1>TEMPLATES - FEUSERLOGINSYSTEM</h1>
+
+<a name="navigation"></a>
+<ul>
+	<li><a href="#template_regularlogin">TEMPLATE_REGULARLOGIN</a></li>
+	<li><a href="#template_smalllogin">TEMPLATE_SMALLLOGIN</a></li>
+	<li><a href="#template_smalllogin_loggedin">TEMPLATE_SMALLLOGIN_LOGGEDIN</a></li>
+	<li><a href="#template_logout">TEMPLATE_LOGOUT</a></li>
+	<li><a href="#template_success">TEMPLATE_SUCCESS</a></li>
+	<li><a href="#template_forgot_password">TEMPLATE_FORGOT_PASSWORD</a></li>
+	<li><a href="#template_forgot_password_sent">TEMPLATE_FORGOT_PASSWORD_SENT</a></li>
+</ul>
+
+<!--#########################################################-->
+<p class="separator"><a href="#navigation">Navigation</a> | <a href="#">To top</a></p>
+<!--#########################################################-->
+
+<a name="template_regularlogin"></a><h1>TEMPLATE_REGULARLOGIN</h1>
+<p class="descript-disabledion">This is the template for the regular login box. It includes various status messages which can be set 
+in the backend of TYPO3. Furthermore there is a link for those who forgot their password.</p>
+
+<!--###TEMPLATE_REGULARLOGIN###-->
+
+<table style="width: 100%; border: 1px #999999 solid; font-family: Verdana, Arial, 'Lucida Grande', Sans-Serif; color: #333333; padding: 6 6 6 6px;">
+<tr><td>
+
+<!--###HEADER_VALID###-->
+<div style="font-size: 18px; font-weight: bold;">###TEXT_HEADER###</div>
+<br />
+<!--###HEADER_VALID###-->
+
+<!--###MESSAGE_VALID###-->
+<div style="font-size: 12px; font-weight: normal;">###TEXT_MESSAGE###</div>
+<br />
+<!--###MESSAGE_VALID###-->
+
+
+<form action="###ACTION_URI###" target="_top" method="post" onSubmit="###ON_SUBMIT###">
+	<table style="font-family: Verdana, Arial, 'Lucida Grande', Sans-Serif; color: #333333;">
+			<tr>
+				<td><span style="font-size: 12px; font-weight: bold;">###LABEL_USERNAME###</span></td>
+				<td>&nbsp;</td>
+				<td><input type="text" id="user" name="user" value="" style="font-size: 11px; border: 1px #999999 solid;"/></td>
+			</tr>
+			<tr>
+				<td><span style="font-size: 12px; font-weight: bold;">###LABEL_PASSWORD###</span></td>
+				<td>&nbsp;</td>
+				<td><input type="password" id="pass" name="pass" value="" style="font-size: 11px; border: 1px #999999 solid;"/></td>
+			</tr>
+			<!--###PERMALOGIN_VALID###-->
+			<tr>
+	 			<td>&nbsp;</td>
+	 			<td>&nbsp;</td>
+				<td>
+					<input name="permalogin" value="0" type="hidden" ###PERMALOGIN_HIDDEN_ATT### id="permaloginHiddenField">
+					<input name="permalogin" value="1" type="checkbox" ###PERMALOGIN_CHECKBOX_ATT### id="permalogin"  onclick="document.getElementById('permaloginHiddenField').disabled = this.checked;" />
+					<span style="font-size: 12px; font-weight: normal;">###LABEL_PERMALOGIN###</span>
+				</td>
+			</tr>
+			<!--###PERMALOGIN_VALID###-->
+	 		<tr>
+	 			<td>&nbsp;</td>
+	 			<td>&nbsp;</td>
+	 			<td>
+	 				<input type="submit" name="submit" value="###LABEL_LOGIN###"  style="font-size: 11px; border: 1px #999999 solid;"/>
+	 			</td>
+	 		</tr>
+	 		<!--###FORGOT_PASSWORD_VALID###-->
+	 		<tr>
+	 			<td>&nbsp;</td>
+	 			<td>&nbsp;</td>
+	 			<td><br /><div style="font-size: 12px; font-weight: normal;">###LABEL_FORGOT_PASSWORD###</div></td>
+	 		</tr>
+	 		<!--###FORGOT_PASSWORD_VALID###-->
+	 		
+	</table>
+	<input type="hidden" name="logintype" value="login" />
+	<input type="hidden" name="pid" value="###STORAGE_PID###" />
+	<input type="hidden" name="redirect_url" value="###REDIRECT_URL###" />
+	###EXTRA_HIDDEN###
+</form>
+</td></tr>
+</table>
+
+<!--###TEMPLATE_REGULARLOGIN###-->
+
+<!--#########################################################-->
+<p class="separator"><a href="#navigation">Navigation</a> | <a href="#">To top</a></p>
+<!--#########################################################-->
+
+<a name="template_smalllogin"></a><h1>TEMPLATE_SMALLLOGIN</h1>
+<p class="descript-disabledion">This is the template for a small/simple version of the regular login box. There is just one input field for the 
+username and one input field for the password.</p>
+
+<!--###TEMPLATE_SMALLLOGIN###-->
+<table  style="width: 100%; border: 1px #999999 solid; font-family: Verdana, Arial, 'Lucida Grande', Sans-Serif; color: #333333; padding: 6 6 6 6px;">
+<tr><td>
+
+<form action="###ACTION_URI###" target="_top" method="post" onSubmit="###ON_SUBMIT###">
+	<table>
+			<tr>
+				<td><span style="font-size: 12px; font-weight: bold;">###LABEL_USERNAME###</span></td>
+				<td><input type="text" id="user" name="user" value="" style="font-size: 11px; border: 1px #999999 solid;"/></td>
+			</tr>
+			<tr>
+				<td><span style="font-size: 12px; font-weight: bold;">###LABEL_PASSWORD###</span></td>
+				<td><input type="password" id="pass" name="pass" value="" style="font-size: 11px; border: 1px #999999 solid;"/></td>
+			</tr>
+			<!--###PERMALOGIN_VALID###-->
+			<tr>
+	 			<td>&nbsp;</td>
+				<td>
+					<input name="permalogin" value="0" type="hidden" ###PERMALOGIN_HIDDEN_ATT### id="permaloginHiddenField">
+					<input name="permalogin" value="1" type="checkbox" ###PERMALOGIN_CHECKBOX_ATT### id="permalogin"  onclick="document.getElementById('permaloginHiddenField').disabled = this.checked;" />
+					<span style="font-size: 12px; font-weight: normal;">###LABEL_PERMALOGIN###</span>
+				</td>
+			</tr>
+			<!--###PERMALOGIN_VALID###-->
+	 		<tr>
+	 			<td></td>
+	 			<td>
+	 				<input type="submit" name="submit" value="###LABEL_LOGIN###" style="font-size: 11px; border: 1px #999999 solid;"/>
+	 			</td>
+	 		</tr>
+	 		<!--###FORGOT_PASSWORD_VALID###-->
+	 		<tr>
+	 			<td>&nbsp;</td>
+	 			<td><br /><div style="font-size: 12px; font-weight: normal;">###LABEL_FORGOT_PASSWORD###</div></td>
+	 		</tr>
+	 		<!--###FORGOT_PASSWORD_VALID###-->
+	</table>
+	<input type="hidden" name="logintype" value="login" />
+	<input type="hidden" name="pid" value="###STORAGE_PID###" />
+	<input type="hidden" name="redirect_url" value="###REDIRECT_URL###" />
+	###EXTRA_HIDDEN###
+</form>
+
+</td></tr>
+</table>
+
+<!--###TEMPLATE_SMALLLOGIN###-->
+
+<!--#########################################################-->
+<p class="separator"><a href="#navigation">Navigation</a> | <a href="#">To top</a></p>
+<!--#########################################################-->
+
+<a name="template_smalllogin_loggedin"></a><h1>TEMPLATE_SMALLLOGIN_LOGGEDIN</h1>
+<p class="descript-disabledion">This is the template for a small/simple version of the regular login box. There is just one input field for the 
+username and one input field for the password.</p>
+
+<!--###TEMPLATE_SMALLLOGIN_LOGGEDIN###-->
+<table  style="width: 100%; border: 1px #999999 solid; font-family: Verdana, Arial, 'Lucida Grande', Sans-Serif; color: #333333; padding: 6 6 6 6px;">
+<tr><td>
+
+<form action="###ACTION_URI###" target="_top" method="post" onSubmit="###ON_SUBMIT###">
+	<table>
+	 		<tr>
+	 			<td>
+          <span style="font-size: 12px; font-weight: normal;">###TEXT_LOGGEDINAS###</span>
+        </td>
+	 			<td>
+	 			  &nbsp;&nbsp;&nbsp;
+	 				<input type="submit" name="submit" value="###LABEL_LOGOUT###" style="font-size: 11px; border: 1px #999999 solid;"/>
+	 			</td>
+	 		</tr>
+	</table>
+	<input type="hidden" name="logintype" value="logout" />
+	<input type="hidden" name="pid" value="###STORAGE_PID###" />
+	<input type="hidden" name="redirect_url" value="###REDIRECT_URL###" />
+	###EXTRA_HIDDEN###
+</form>
+
+</td></tr>
+</table>
+
+<!--###TEMPLATE_SMALLLOGIN_LOGGEDIN###-->
+
+<!--#########################################################-->
+<p class="separator"><a href="#navigation">Navigation</a> | <a href="#">To top</a></p>
+<!--#########################################################-->
+
+<a name="template_logout"></a><h1>TEMPLATE_LOGOUT</h1>
+<p class="descript-disabledion">This is the template which is shown after someone logged in or displaying the status of the current connection.</p>
+
+<!--###TEMPLATE_LOGOUT###-->
+
+<table  style="width: 100%; border: 1px #999999 solid; font-family: Verdana, Arial, 'Lucida Grande', Sans-Serif; color: #333333; padding: 6 6 6 6px;">
+<tr><td>
+
+<!--###HEADER_VALID###-->
+<div style="font-size: 18px; font-weight: bold;">###TEXT_HEADER###</div>
+<br />
+<!--###HEADER_VALID###-->
+
+<!--###MESSAGE_VALID###-->
+<div style="font-size: 12px; font-weight: normal;">###TEXT_MESSAGE###</div>
+<br />
+<!--###MESSAGE_VALID###-->
+
+
+<form action="###ACTION_URI###" target="_top" method="post">
+	<table>
+	 		<tr>
+	 			<td><span style="font-size: 12px; font-weight: bold;">###LABEL_USERNAME###:</span></td>
+	 			<td><span style="font-size: 12px; font-weight: normal;">###USERNAME###</span></td>
+	 		</tr>
+	 		<tr>
+	 			<td></td>
+	 			<td>
+	 			  <br />
+	 				<input type="submit" name="submit" value="###LABEL_LOGOUT###" style="font-size: 11px; border: 1px #999999 solid;"/>
+	 			</td>
+	 		</tr>
+	</table>
+	<input type="hidden" name="logintype" value="logout" />
+	<input type="hidden" name="pid" value="###STORAGE_PID###" />
+	<input type="hidden" name="redirect_url" value="###REDIRECT_URL###" />
+</form>
+
+</td></tr>
+</table>
+
+<!--###TEMPLATE_LOGOUT###-->
+
+<!--#########################################################-->
+<p class="separator"><a href="#navigation">Navigation</a> | <a href="#">To top</a></p>
+<!--#########################################################-->
+
+<a name="template_success"></a><h1>TEMPLATE_SUCCESS</h1>
+<p class="descript-disabledion">This is the template which is displayed when the user successfully logged in.</p>
+
+<!--###TEMPLATE_SUCCESS###-->
+
+<table  style="width: 100%; border: 1px #999999 solid; font-family: Verdana, Arial, 'Lucida Grande', Sans-Serif; color: #333333; padding: 6 6 6 6px;">
+<tr><td>
+
+<!--###HEADER_VALID###-->
+<div style="font-size: 18px; font-weight: bold;">###TEXT_HEADER###</div>
+<br />
+<!--###HEADER_VALID###-->
+
+<!--###MESSAGE_VALID###-->
+<div style="font-size: 12px; font-weight: normal;">###TEXT_MESSAGE###</div>
+<br />
+<!--###MESSAGE_VALID###-->
+
+</td></tr>
+</table>
+
+<!--###TEMPLATE_SUCCESS###-->
+
+<!--#########################################################-->
+<p class="separator"><a href="#navigation">Navigation</a> | <a href="#">To top</a></p>
+<!--#########################################################-->
+
+<a name="template_forgot_password"></a><h1>TEMPLATE_FORGOT_PASSWORD</h1>
+<p class="descript-disabledion">This is the template which is displayed if you forgot your password and want to recover it.</p>
+
+<!--###TEMPLATE_FORGOT_PASSWORD###-->
+
+<table  style="width: 100%; border: 1px #999999 solid; font-family: Verdana, Arial, 'Lucida Grande', Sans-Serif; color: #333333; padding: 6 6 6 6px;">
+<tr><td>
+
+<!--###HEADER_VALID###-->
+<div style="font-size: 18px; font-weight: bold;">###TEXT_HEADER###</div>
+<br />
+<!--###HEADER_VALID###-->
+
+<!--###MESSAGE_VALID###-->
+<div style="font-size: 12px; font-weight: normal;">###TEXT_MESSAGE###</div>
+<br />
+<!--###MESSAGE_VALID###-->
+
+<form action="###ACTION_URI###" method="post">
+	<table>
+	    <tr>
+				<td><span style="font-size: 12px; font-weight: bold;">###LABEL_USERNAME###</span></td>
+				<td><input type="text" name="###PREFIXID###[DATA][username]" style="font-size: 11px; border: 1px #999999 solid;"/></td>
+			</tr>
+			<tr>
+				<td><span style="font-size: 12px; font-weight: bold;">###LABEL_EMAIL###</span></td>
+				<td><input type="text" name="###PREFIXID###[DATA][forgotEmail]" style="font-size: 11px; border: 1px #999999 solid;"/></td>
+			</tr>
+			<tr>
+			<!--###CAPTCHA_INSERT### this subpart is removed if CAPTCHA is not enabled! -->
+			<tr>
+	 			<td>&nbsp;</td>
+				<td>
+					<span style="font-size: 11px;">###SR_FREECAP_NOTICE###
+					###SR_FREECAP_CANT_READ###</span>
+					<br />
+					<input type="text" size="15" id="captcha_response" name="captcha_response" title="###SR_FREECAP_NOTICE###" value="">
+					###SR_FREECAP_IMAGE###
+				</td>
+			</tr>
+			<!--###CAPTCHA_INSERT###-->
+	 			<td></td>
+	 			<td><input type="submit" name="submit" value="###LABEL_SEND_PASSWORD###" style="font-size: 11px; border: 1px #999999 solid;"/></td>
+	 		</tr>
+	</table>
+	###EXTRA_HIDDEN###
+</form>
+
+</td></tr>
+</table>
+
+<!--###TEMPLATE_FORGOT_PASSWORD###-->
+
+<!--#########################################################-->
+<p class="separator"><a href="#navigation">Navigation</a> | <a href="#">To top</a></p>
+<!--#########################################################-->
+
+<a name="template_forgot_password_sent"></a><h1>TEMPLATE_FORGOT_PASSWORD_SENT</h1>
+<p class="descript-disabledion">This is the template which is displayed after you sent your email address for confirmation.</p>
+
+<!--###TEMPLATE_FORGOT_PASSWORD_SENT###-->
+
+<table  style="width: 100%; border: 1px #999999 solid; font-family: Verdana, Arial, 'Lucida Grande', Sans-Serif; color: #333333; padding: 6 6 6 6px;">
+<tr><td>
+
+<!--###HEADER_VALID###-->
+<div style="font-size: 18px; font-weight: bold;">###TEXT_HEADER###</div>
+<br />
+<!--###HEADER_VALID###-->
+
+<!--###MESSAGE_VALID###-->
+<div style="font-size: 12px; font-weight: normal;">###TEXT_MESSAGE###</div>
+<br />
+<!--###MESSAGE_VALID###-->
+
+</td></tr>
+</table>
+
+<!--###TEMPLATE_FORGOT_PASSWORD_SENT###-->
+
+<!--#########################################################-->
+<p class="separator"><a href="#navigation">Navigation</a> | <a href="#">To top</a></p>
+<!--#########################################################-->
+
+
+</body>
+</html>

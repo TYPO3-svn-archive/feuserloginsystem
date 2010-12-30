@@ -1,0 +1,11 @@
+
+### UPGRADE FROM VERSION 0.1.1 TO 0.1.2 ###
+
+ * Please add the marker ###EXTRA_HIDDEN### to the template ###TEMPLATE_FORGOT_PASSWORD### within the <form> tag.
+ * Please change from plugin.feuserloginsystem.passwordRecovery.enablePwLink to plugin.feuserloginsystem.passwordRecovery.enable 
+
+### UPGRADE FROM VERSION 0.0.6 TO 0.1.0 ###
+
+ * Note all the existing settings and backup the personalized content in Flexform. Some of them might get lost due to changes in the flexform structure.
+ * If you inserted the plugin by TypoScript, take a look at the TypoScript Examples in the documentaion. Also the structure of the Plugin Constants and the Plugin Config has partly changed.
+ * Update your template with new markers (as the permalogin section)

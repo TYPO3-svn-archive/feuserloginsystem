@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;web_txfeuserloginsystemM1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">User Statistics</label>
+			<label index="function1">List View</label>
+			<label index="function2">User View</label>
+			<label index="function3">Function #3</label>
+			<label index="listViewMessage">LIST VIEW:</label>
+			<label index="userViewMessage">USER VIEW:</label>
+			<label index="timePeriod">Period of Time</label>
+		  <label index="year">Year</label>
+		  <label index="month">Month</label>
+		  <label index="periodChoosingInstruction">Please choose the period of time you want to take a look at.</label>
+		  <label index="user">User</label>
+		  <label index="name">Name</label>
+		  <label index="loginOnAt">Login on/at</label>
+		  <label index="visitedPages">Visited Pages</label>
+		  <label index="durationOfStay">Duration of Stay</label>
+		  <label index="timeThatPassedBy">Time that passed by</label>
+		  <label index="lastPageViewOnAt">Last Page View on/at</label>
+		  <label index="ignorePageSelection">Ignore page selection and show all users.</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="title">Benutzerstatistik</label>
+			<label index="function1">Listenansicht</label>
+			<label index="function2">Benutzeransicht</label>
+			<label index="function3">Function #3</label>
+			<label index="listViewMessage">LISTENANSICHT:</label>
+			<label index="userViewMessage">BENUTZERANSICHT:</label>
+			<label index="timePeriod">Zeitraum</label>
+		  <label index="year">Jahr</label>
+		  <label index="month">Monat</label>
+		  <label index="periodChoosingInstruction">Bitte wählen Sie einen Zeitraum aus, den Sie sich ansehen möchten.</label>
+		  <label index="user">Benutzer</label>
+		  <label index="name">Name</label>
+		  <label index="loginOnAt">Login am/um</label>
+		  <label index="visitedPages">Besuchte Seiten</label>
+		  <label index="durationOfStay">Aufenthaltsdauer</label>
+		  <label index="timeThatPassedBy">Vergangene Zeit</label>
+		  <label index="lastPageViewOnAt">Letzter Seitenaufruf am/um</label>
+		  <label index="ignorePageSelection">Ignoriere Seitenauswahl und zeige alle Benutzer.</label>
+		</languageKey>
+	</data>
+</T3locallang>

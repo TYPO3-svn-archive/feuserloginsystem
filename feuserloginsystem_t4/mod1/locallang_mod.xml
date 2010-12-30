@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;web_txfeuserloginsystemM1&quot; - header, description</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="mlang_tabs_tab">User Statistics</label>
+			<label index="mlang_labels_tabdescr">Get interesting information about the user's online behaviour.</label>
+			<label index="mlang_labels_tablabel">Get interesting information about the user's online behaviour.</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="mlang_tabs_tab">Benutzerstatistik</label>
+			<label index="mlang_labels_tabdescr">Erhalten Sie interessante Informationen über das Onlineverhalten der Benutzer.</label>
+			<label index="mlang_labels_tablabel">Erhalten Sie interessante Informationen über das Onlineverhalten der Benutzer.</label>
+		</languageKey>
+	</data>
+</T3locallang>

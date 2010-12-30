@@ -1,0 +1,1 @@
++ Add the possibility to the PasswordRecovery module that the user only needs to enter his email address.
